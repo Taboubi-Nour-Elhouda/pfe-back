@@ -21,7 +21,7 @@ app.use(cors({
   origin: ['http://localhost:4200','http://127.0.0.1:4200'],
   credentials:true
 }))
-mongoose.connect('mongodb://localhost/ConfeWebManager');
+let connection = require("./config/db")
 //passport 
 var passport = require('passport');
 var session = require('express-session');
